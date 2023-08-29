@@ -1,0 +1,244 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+    <header class="h-20 flex justify-center items-center">
+        <div>
+            <p class="text-gray-800 text-3xl">Safepp</p>
+        </div>
+    </header>
+	<main class="w-full flex flex-col gap-5 mb-40">
+        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-full">
+            <div class="w-full flex flex-col justify-center items-center h-full">
+               <div class="w-10/12 flex flex-col gap-4">
+                    <h1 class="text-black text-5xl font-bold uppercase">Rondas Seguras y Eficientes
+                    </h1>
+                    <p class="text-gray-700">Descubre una innovación en seguridad: nuestra aplicación redefine las rondas de los guardias, elevando la eficiencia y garantizando la seguridad en todo momento. Un cambio revolucionario en la gestión de la seguridad.</p>
+                    <div class="">
+                        <button class="px-4 py-3 bg-purple-700 text-white text-sm font-bold rounded-md uppercase">Potencia Tu Empresa Hoy</button>
+                    </div>
+                    <div class="text-purple-700 text-lg font-bold uppercase" id="countdown"></div>
+               </div>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <div class="w-10/12">
+                    <img class="rounded-xl w-full h-full" src="https://cdn.pixabay.com/photo/2014/02/13/07/28/security-265130_1280.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="py-4 text-gray-400 uppercase flex flex-col md:flex-row gap-6 justify-center items-center font-bold">
+            <p>NOVASEP</p>
+            <p>SEGURIDAD SUPERIOR</p>
+            <p>SIETE24</p>
+            <p>OMNITEMPUS</p>
+            <p>MIRO SEGURIDAD</p>
+            <p>ATLAS</p>
+        </div>
+        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-full">
+            <div class="w-full flex justify-center items-center">
+                <div class="w-10/12">
+                    <img class="rounded-xl w-full h-full" src="https://cdn.pixabay.com/photo/2020/03/17/07/21/tablet-4939259_1280.jpg" alt="">
+                </div>
+            </div>
+            <div class="w-full flex flex-col justify-center items-center h-full">
+               <div class="w-10/12 flex flex-col gap-4">
+                    <h1 class="text-gray-900 text-xl font-bold uppercase"> Optimización de rondas de guardias de seguridad mediante una aplicación de seguridad</h1>
+                    <p class="text-gray-600">En muchas organizaciones, el control manual de las rondas de los guardias de seguridad puede ser ineficiente y propenso a errores. Para abordar este problema, se propone el uso de una aplicación de seguridad que automatiza y optimiza estas rondas. Esta aplicación permite asignar rutas, registrar horarios, detectar incidencias y generar informes detallados, brindando un seguimiento exacto y en tiempo real de la actividad de los guardias. Al proporcionar una solución eficiente y digital, la aplicación de seguridad contribuye a fortalecer la seguridad general de una organización y minimizar los riesgos asociados a la vigilancia manual de instalaciones.
+                    </p>
+               </div>
+            </div>
+        </section>
+        <hr>
+        <section class="w-full flex flex-col justify-center items-center gap-6 h-full">
+            <div class="flex flex-col-reverse md:flex-col gap-4">
+                <div class="w-full flex flex-col justify-center items-center h-full">
+                    <div class="w-10/12 flex flex-col gap-4 justify-center items-center">
+                         <h1 class="text-black text-xl font-bold uppercase text-center">Solución inteligente de vigilancia                    </h1>
+                         <p class="text-gray-700 text-center">La solución propuesta consiste en implementar una aplicación de seguridad inteligente que mejora y optimiza la vigilancia en tiempo real. Esta solución automatiza la asignación de rutas, registra incidencias, genera informes detallados y se integra con sistemas de videovigilancia y alarmas, brindando una vigilancia más precisa y efectiva de las instalaciones y mejorando la capacidad de respuesta ante emergencias, lo que resulta en una mayor seguridad y protección de las organizaciones.</p>
+                    </div>
+                 </div>
+                 <div class="w-full flex justify-center items-center">
+                     <div class="w-full md:w-1/2 flex justify-center items-center">
+                         <img class="rounded-xl w-10/12 h-10/12" src="https://cdn.pixabay.com/photo/2020/07/14/09/26/smartphone-5403602_1280.jpg" alt="">
+                     </div>
+                 </div>
+            </div>
+            <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="flex justify-center items-center">
+                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                        Eficiencia
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                        Monitoreo
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                        Seguridad
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                        Informes
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="w-full flex flex-col justify-center items-center">
+            <p class="text-2xl uppercase my-5">testimonios</p>
+            <div class="w-3/4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
+                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                    <div>
+                        <div class="flex items-center space-x-4">
+                            <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                            <div class="font-medium dark:text-gray-700">
+                                <div>Jese Leos</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">August 3, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-left">Desde que implementamos la aplicación de seguridad optimizada, hemos notado una mejora significativa en la eficiencia de nuestras rondas de vigilancia. Ahora podemos asignar rutas de forma más rápida y precisa, lo que nos ha permitido optimizar nuestros recursos y brindar una mayor seguridad a nuestros clientes.</p>
+                </div>
+                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                    <div>
+                        <div class="flex items-center space-x-4">
+                            <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                            <div class="font-medium dark:text-gray-700">
+                                <div>Juan Laos</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">May 20, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-left">La capacidad de monitorear en tiempo real las rondas de nuestros guardias de seguridad ha sido fundamental para garantizar la integridad de nuestras instalaciones. Gracias a esta aplicación, podemos mantener un control constante y tomar acciones inmediatas ante cualquier incidencia que se presente.</p>
+                   
+                </div>
+                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                    <div>
+                        <div class="flex items-center space-x-4">
+                            <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                            <div class="font-medium dark:text-gray-700">
+                                <div>Laura Gonsalez</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Diciembre 19, 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-left">La aplicación de seguridad nos ha brindado la tranquilidad que buscamos en cuanto a la protección de nuestras instalaciones. Los informes detallados que genera nos permiten tener un registro completo de las actividades realizadas por los guardias y nos proporciona una mayor confianza en la calidad del servicio que recibimos.</p>
+                    
+                </div>
+                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                    <div>
+                        <div class="flex items-center space-x-4">
+                            <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
+                            <div class="font-medium dark:text-gray-700">
+                                <div>Juan Martinez</div>
+                                <div class="text-sm text-gray-500 dark:text-gray-400">Abril 12, 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-left">La implementación de esta aplicación ha sido una verdadera mejora en nuestra gestión de seguridad. Ahora podemos generar informes precisos y detallados con tan solo unos clics, lo que ha simplificado nuestro proceso de reporte y nos ha permitido tomar decisiones basadas en datos concretos.</p>
+                </div>
+            </div>
+        </section>
+        <!-- \testimonios -->
+
+        <section class="w-full flex flex-col justify-center items-center">
+            <p class="text-2xl uppercase my-5">Caracteristicas</p>
+            <div class="w-3/4 grid sm:grid-cols-2 md:grid-cols-2 gap-2">
+                <ul class="w-full flex flex-col gap-3">
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
+                        </div>
+                        <p>Asignación de rutas</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
+                        </div>
+                        <p>Monitoreo en tiemlio real</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
+                        </div>
+                        <p>Registro de incidencias</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
+                        </div>
+                        <p>Alertas de seguridad</p>
+                    </li>
+                </ul>
+                <ul class="w-full flex flex-col gap-3">
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
+                        </div>
+                        <p>Generación de informes detallados</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
+                        </div>
+                        <p>Integración con sistemas de videovigilancia y alarmas</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="x"/>
+                        </div>
+                        <p>Acceso remoto desde disliositivos móviles</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <div class="w-2/12">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="x"/>
+                        </div>
+                        <p>Interfaz intuitiva y fácil de usar.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="w-full mt-5">
+            <div class="w-full flex justify-center">
+                <button class="px-4 py-3 bg-purple-700 text-white text-sm font-bold rounded-md uppercase">Potencia Tu Empresa Hoy</button>
+            </div>
+        </section>
+
+	</main>
+</Layout>
+
+
+<script>
+// Fecha de finalización del contador
+var countDownDate = new Date("August 31, 2023 23:59:59").getTime();
+
+// Actualiza el contador cada segundo
+var countdown = setInterval(function() {
+  // Obtiene la fecha y hora actual
+  var now = new Date().getTime();
+
+  // Calcula la diferencia entre la fecha final y la actual
+  var difference = countDownDate - now;
+
+  // Calcula los días, horas, minutos y segundos restantes
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  // Muestra la cuenta regresiva en el elemento con el id "countdown"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  // Si el contador ha terminado, muestra un mensaje
+  if (difference < 0) {
+    clearInterval(countdown);
+    document.getElementById("countdown").innerHTML = "¡El contador ha terminado!";
+  }
+}, 1000);
+</script>
