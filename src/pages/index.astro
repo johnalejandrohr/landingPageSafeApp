@@ -4,27 +4,29 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-    <header class="h-20 flex justify-center items-center">
-        <div>
-            <p class="text-gray-800 text-3xl">Safepp</p>
+    <header class="h-20 flex justify-center items-center mb-2 shadow bg-purple-700/90 fixed left-0 right-0 top-0">
+        <div class="w-full flex flex-col md:flex-row gap-2 justify-center items-center">
+            <!-- <p class="text-white text-3xl">Safepp</p> -->
+            <div class="text-white text-4xl font-extrabold uppercase" id="countdown"></div>
+            <p class="text-white">
+                ¡APROVECHA EL DESCUENTO HASTA HOY!
+            </p>
         </div>
     </header>
-	<main class="w-full flex flex-col gap-5 mb-40">
-        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-full">
+	<main class="w-full flex flex-col gap-5">
+        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-screen">
             <div class="w-full flex flex-col justify-center items-center h-full">
-               <div class="w-10/12 flex flex-col gap-4">
-                    <h1 class="text-black text-5xl font-bold uppercase">Rondas Seguras y Eficientes
-                    </h1>
+               <div class="w-10/12 flex flex-col gap-4 justify-center">
+                    <h1 class="text-black text-5xl font-bold uppercase">Rondas Seguras y Eficientes</h1>
                     <p class="text-gray-700">Descubre una innovación en seguridad: nuestra aplicación redefine las rondas de los guardias, elevando la eficiencia y garantizando la seguridad en todo momento. Un cambio revolucionario en la gestión de la seguridad.</p>
-                    <div class="">
+                    <div>
                         <button class="px-4 py-3 bg-purple-700 text-white text-sm font-bold rounded-md uppercase">Potencia Tu Empresa Hoy</button>
                     </div>
-                    <div class="text-purple-700 text-lg font-bold uppercase" id="countdown"></div>
                </div>
             </div>
-            <div class="w-full flex justify-center items-center">
+            <div class="w-full h-full flex justify-center items-center">
                 <div class="w-10/12">
-                    <img class="rounded-xl w-full h-full" src="https://cdn.pixabay.com/photo/2014/02/13/07/28/security-265130_1280.jpg" alt="">
+                    <img class="rounded-xl w-full h-full" src="https://previews.123rf.com/images/sylverarts/sylverarts2204/sylverarts220400364/185530938-palabras-de-dise%C3%B1o-gr%C3%A1fico-con-l%C3%A1piz-en-lugar-de-letra-i-dise%C3%B1ador-y-artista-logotipo-creativo.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -67,22 +69,22 @@ import Card from '../components/Card.astro';
             </div>
             <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-3">
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
                         Eficiencia
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
                         Monitoreo
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
                         Seguridad
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-slate-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
                         Informes
                     </div>
                 </div>
@@ -216,7 +218,7 @@ import Card from '../components/Card.astro';
 
 <script>
 // Fecha de finalización del contador
-var countDownDate = new Date("August 31, 2023 23:59:59").getTime();
+var countDownDate = new Date("September 31, 2023 23:59:59").getTime();
 
 // Actualiza el contador cada segundo
 var countdown = setInterval(function() {
@@ -233,7 +235,9 @@ var countdown = setInterval(function() {
   var seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
   // Muestra la cuenta regresiva en el elemento con el id "countdown"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  // let time = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  let time = `${hours} : ${minutes} : ${seconds}`;
+  document.getElementById("countdown").innerHTML = time;
 
   // Si el contador ha terminado, muestra un mensaje
   if (difference < 0) {

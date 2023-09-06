@@ -1,51 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-		<meta name="generator" content="Astro v2.10.14">
-		<title>Welcome to Astro.</title>
-	<link rel="stylesheet" href="/_astro/ciaz.e619b5cc.css" /><script type="module">var c=new Date("September 31, 2023 23:59:59").getTime(),d=setInterval(function(){var n=new Date().getTime(),e=c-n,t=Math.floor(e%(1e3*60*60*24)/(1e3*60*60)),o=Math.floor(e%(1e3*60*60)/(1e3*60)),r=Math.floor(e%(1e3*60)/1e3);let a=`${t} : ${o} : ${r}`;document.getElementById("countdown").innerHTML=a,e<0&&(clearInterval(d),document.getElementById("countdown").innerHTML="¡El contador ha terminado!")},1e3);
-</script></head>
-	<body class="">
-		
-    <header class="h-20 flex justify-center items-center mb-2 shadow bg-purple-700/90 fixed left-0 right-0 top-0">
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+    <header class="h-20 flex justify-center items-center mb-2 shadow bg-black/90 sticky left-0 right-0 top-0">
         <div class="w-full flex flex-col md:flex-row gap-2 justify-center items-center">
             <!-- <p class="text-white text-3xl">Safepp</p> -->
-            <div class="text-white text-4xl font-extrabold uppercase" id="countdown"></div>
+            <!-- <div class="text-white text-4xl font-extrabold uppercase" id="countdown"></div>
             <p class="text-white">
-                ¡APROVECHA EL DESCUENTO HASTA HOY!
-            </p>
+                CIAZ
+            </p> -->
+            <p class="text-white text-4xl font-extrabold uppercase">CIAZ</p>
+
         </div>
     </header>
-	<main class="w-full flex flex-col gap-5">
-        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-screen">
+	<main class="w-full flex flex-col gap-5 mb-40">
+        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-full" data-aos="fade-down">
             <div class="w-full flex flex-col justify-center items-center h-full">
-               <div class="w-10/12 flex flex-col gap-4 justify-center">
-                    <h1 class="text-black text-5xl font-bold uppercase">Rondas Seguras y Eficientes</h1>
-                    <p class="text-gray-700">Descubre una innovación en seguridad: nuestra aplicación redefine las rondas de los guardias, elevando la eficiencia y garantizando la seguridad en todo momento. Un cambio revolucionario en la gestión de la seguridad.</p>
-                    <div>
-                        <button class="px-4 py-3 bg-purple-700 text-white text-sm font-bold rounded-md uppercase">Potencia Tu Empresa Hoy</button>
+               <div class="w-10/12 flex flex-col gap-4">
+                    <h1 class="text-black text-5xl font-bold uppercase">Explora el Cosmos con CIAZ en Zipaquirá
+                    </h1>
+                    <p class="text-gray-700">Abre las puertas a la maravilla cósmica en CIAZ Zipaquirá. Únete a nuestra comunidad de exploradores del espacio y desvela los secretos del universo a través de la ciencia y la observación estelar.</p>
+                    <div class="">
+                        <button class="px-4 py-3 bg-black text-white text-sm font-bold rounded-md uppercase">Unete a nosotros</button>
                     </div>
                </div>
             </div>
-            <div class="w-full h-full flex justify-center items-center">
+            <div class="w-full flex justify-center items-center">
                 <div class="w-10/12">
-                    <img class="rounded-xl w-full h-full" src="https://previews.123rf.com/images/sylverarts/sylverarts2204/sylverarts220400364/185530938-palabras-de-dise%C3%B1o-gr%C3%A1fico-con-l%C3%A1piz-en-lugar-de-letra-i-dise%C3%B1ador-y-artista-logotipo-creativo.jpg" alt="">
+                    <img class="rounded-xl w-full h-full" src="https://cdn.pixabay.com/photo/2020/09/20/07/24/iceland-5586225_1280.jpg" alt="">
                 </div>
             </div>
         </section>
-        <div class="py-4 text-gray-400 uppercase flex flex-col md:flex-row gap-6 justify-center items-center font-bold">
-            <p>NOVASEP</p>
-            <p>SEGURIDAD SUPERIOR</p>
-            <p>SIETE24</p>
-            <p>OMNITEMPUS</p>
-            <p>MIRO SEGURIDAD</p>
-            <p>ATLAS</p>
+        <div class="py-4 text-gray-400 uppercase flex flex-col md:flex-row gap-6 justify-center items-center font-bold" data-aos="fade-down">
+            <p class="uppercase">astronomía</p>
+            <p class="uppercase">Púlsar</p>
+            <p class="uppercase">sol</p>
+            <p class="uppercase">estrellas</p>
+            <p class="uppercase">sistema solar</p>
+            <p class="uppercase">cometa</p>
         </div>
-        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-full">
+        <section class="w-full flex flex-col md:flex-row justify-center items-center gap-3 h-full" data-aos="fade-down">
             <div class="w-full flex justify-center items-center">
                 <div class="w-10/12">
                     <img class="rounded-xl w-full h-full" src="https://cdn.pixabay.com/photo/2020/03/17/07/21/tablet-4939259_1280.jpg" alt="">
@@ -60,7 +56,7 @@
             </div>
         </section>
         <hr>
-        <section class="w-full flex flex-col justify-center items-center gap-6 h-full">
+        <section class="w-full flex flex-col justify-center items-center gap-6 h-full" data-aos="fade-down">
             <div class="flex flex-col-reverse md:flex-col gap-4">
                 <div class="w-full flex flex-col justify-center items-center h-full">
                     <div class="w-10/12 flex flex-col gap-4 justify-center items-center">
@@ -76,22 +72,22 @@
             </div>
             <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-3">
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-black text-white rounded-full flex justify-center items-center shadow">
                         Eficiencia
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-black text-white rounded-full flex justify-center items-center shadow">
                         Monitoreo
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-black text-white rounded-full flex justify-center items-center shadow">
                         Seguridad
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <div class="w-28 h-28 bg-purple-800 text-white rounded-full flex justify-center items-center shadow">
+                    <div class="w-28 h-28 bg-black text-white rounded-full flex justify-center items-center shadow">
                         Informes
                     </div>
                 </div>
@@ -99,10 +95,10 @@
         </section>
 
         <!-- Testimonios -->
-        <section class="w-full flex flex-col justify-center items-center">
+        <section class="w-full flex flex-col justify-center items-center" data-aos="fade-down">
             <p class="text-2xl uppercase my-5">testimonios</p>
             <div class="w-3/4 grid sm:grid-cols-2 md:grid-cols-3 gap-2">
-                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                <div class="bg-slate-0 rounded-md p-6 flex justify-center items-start flex-col gap-6">
                     <div>
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
@@ -114,7 +110,7 @@
                     </div>
                     <p class="text-left">Desde que implementamos la aplicación de seguridad optimizada, hemos notado una mejora significativa en la eficiencia de nuestras rondas de vigilancia. Ahora podemos asignar rutas de forma más rápida y precisa, lo que nos ha permitido optimizar nuestros recursos y brindar una mayor seguridad a nuestros clientes.</p>
                 </div>
-                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                <div class="bg-slate-0 rounded-md p-6 flex justify-center items-start flex-col gap-6">
                     <div>
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
@@ -127,7 +123,7 @@
                     <p class="text-left">La capacidad de monitorear en tiempo real las rondas de nuestros guardias de seguridad ha sido fundamental para garantizar la integridad de nuestras instalaciones. Gracias a esta aplicación, podemos mantener un control constante y tomar acciones inmediatas ante cualquier incidencia que se presente.</p>
                    
                 </div>
-                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                <div class="bg-slate-0 rounded-md p-6 flex justify-center items-start flex-col gap-6">
                     <div>
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
@@ -140,7 +136,7 @@
                     <p class="text-left">La aplicación de seguridad nos ha brindado la tranquilidad que buscamos en cuanto a la protección de nuestras instalaciones. Los informes detallados que genera nos permiten tener un registro completo de las actividades realizadas por los guardias y nos proporciona una mayor confianza en la calidad del servicio que recibimos.</p>
                     
                 </div>
-                <div class="bg-purple-200 rounded-md p-6 flex justify-center items-start flex-col gap-6">
+                <div class="bg-slate-0 rounded-md p-6 flex justify-center items-start flex-col gap-6">
                     <div>
                         <div class="flex items-center space-x-4">
                             <img class="w-10 h-10 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="">
@@ -156,31 +152,31 @@
         </section>
         <!-- \testimonios -->
 
-        <section class="w-full flex flex-col justify-center items-center">
+        <section class="w-full flex flex-col justify-center items-center" data-aos="fade-down">
             <p class="text-2xl uppercase my-5">Caracteristicas</p>
             <div class="w-3/4 grid sm:grid-cols-2 md:grid-cols-2 gap-2">
                 <ul class="w-full flex flex-col gap-3">
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
                         </div>
                         <p>Asignación de rutas</p>
                     </li>
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
                         </div>
                         <p>Monitoreo en tiempo real</p>
                     </li>
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
                         </div>
                         <p>Registro de incidencias</p>
                     </li>
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
                         </div>
                         <p>Alertas de seguridad</p>
                     </li>
@@ -188,25 +184,25 @@
                 <ul class="w-full flex flex-col gap-3">
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
                         </div>
                         <p>Generación de informes detallados</p>
                     </li>
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji">
+                            <img width="25" height="25" src="https://img.icons8.com/emoji/48/check-mark-emoji.png" alt="check-mark-emoji"/>
                         </div>
                         <p>Integración con sistemas de videovigilancia y alarmas</p>
                     </li>
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="x">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="x"/>
                         </div>
                         <p>Acceso remoto desde dispositivos móviles</p>
                     </li>
                     <li class="flex gap-2">
                         <div class="w-2/12">
-                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="x">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="x"/>
                         </div>
                         <p>Interfaz intuitiva y fácil de usar.</p>
                     </li>
@@ -215,10 +211,39 @@
         </section>
         <section class="w-full mt-5">
             <div class="w-full flex justify-center">
-                <button class="px-4 py-3 bg-purple-700 text-white text-sm font-bold rounded-md uppercase">Potencia Tu Empresa Hoy</button>
+                <button class="px-4 py-3 bg-orange-500 text-white text-sm font-bold rounded-md uppercase">Potencia Tu Empresa Hoy</button>
             </div>
         </section>
 
 	</main>
+</Layout>
 
-	</body></html>
+<script>
+// Fecha de finalización del contador
+var countDownDate = new Date("September 31, 2023 23:59:59").getTime();
+
+// Actualiza el contador cada segundo
+var countdown = setInterval(function() {
+  // Obtiene la fecha y hora actual
+  var now = new Date().getTime();
+
+  // Calcula la diferencia entre la fecha final y la actual
+  var difference = countDownDate - now;
+
+  // Calcula los días, horas, minutos y segundos restantes
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  // Muestra la cuenta regresiva en el elemento con el id "countdown"
+  let time = `${hours} : ${minutes} : ${seconds}`;
+  document.getElementById("countdown").innerHTML = time;
+
+  // Si el contador ha terminado, muestra un mensaje
+  if (difference < 0) {
+    clearInterval(countdown);
+    document.getElementById("countdown").innerHTML = "¡El contador ha terminado!";
+  }
+}, 1000);
+</script>
